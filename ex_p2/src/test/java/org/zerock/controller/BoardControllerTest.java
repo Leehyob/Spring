@@ -2,6 +2,8 @@ package org.zerock.controller;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +16,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.context.WebApplicationContext;
+import org.zerock.domain.BoardVO;
 import org.zerock.service.BoardService;
 
 import lombok.extern.log4j.Log4j;
@@ -28,6 +31,7 @@ public class BoardControllerTest {
 	@Autowired
 	private WebApplicationContext ctx;
 	private MockMvc mockMvc;
+	private ModelMap modelMap;
 	
 	@org.junit.Before
 	public void setup() {
@@ -75,6 +79,15 @@ public class BoardControllerTest {
 				.param("bno", "4")).andReturn().getModelAndView().getViewName();
 		
 		log.info(viewName);
+	}
+	
+	@Test
+	public void testGetListWithPaging() throws Exception{
+		ModelMap modelMap = mockMvc.perform(MockMvcRequestBuilders
+				.get("/board/list").param("pageNum", "1").param("amount", "10"))
+				.andReturn().getModelAndView().getModelMap();
+		
+		log.info(modelMap);
 	}
 	
 }

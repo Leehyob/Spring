@@ -1,0 +1,32 @@
+package org.zerock.domain;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+public class PageDTO {
+	private int pageNum;	//페이지 넘버
+	private int amount;		//페이지당 글 수
+	private int startPage;
+	private int endPage;
+	private boolean prev;
+	private boolean next;
+	
+	public PageDTO() {
+	}
+	
+	public PageDTO(int pageNum,int amount, int startPage, int endPage, boolean prev, boolean next) {
+		this.pageNum = pageNum;
+		this.amount = amount;
+		this.startPage = startPage;
+		this.endPage = endPage;
+		this.prev = prev;
+		this.next = next;
+		
+		
+	}
+	
+}
