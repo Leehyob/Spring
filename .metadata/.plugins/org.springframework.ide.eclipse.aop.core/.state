@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="ex02_test"/>
+<aop-project name="ex_p2"/>
+<aop-project name="TRy3"/>
+<aop-project name="ex01"/>
+<aop-project name="MybatisTest"/>
+<aop-project name="ex_p"/>
+<aop-project name="Practice01"/>
+<aop-project name="SampleTest"/>
+<aop-project name="Try"/>
+<aop-project name="SampleTest2"/>
+<aop-project name="ex02"/>
+<aop-project name="ex00"/>
+<aop-project name="Try2"/>
+<aop-project name="Try4"/>
+</aop-reference-model>

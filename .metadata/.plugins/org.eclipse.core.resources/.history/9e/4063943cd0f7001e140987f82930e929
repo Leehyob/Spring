@@ -1,0 +1,41 @@
+package org.zerock.controller;
+
+import java.util.List;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.domain.BoardVO;
+import org.zerock.mapper.BoardMapper;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@RequestMapping("/board/*")
+public class BoardController {
+	
+	@Autowired
+	private BoardMapper boardMapper;
+	
+	@GetMapping("/list")
+	public void list() {
+		
+		List<BoardVO> list = boardMapper.list();
+		
+		log.info(list);	
+	}
+	
+	@GetMapping("/read")
+	public void read() {
+		
+		BoardVO board = boardMapper.read(2);
+		
+		log.info(board);
+	}
+	
+}

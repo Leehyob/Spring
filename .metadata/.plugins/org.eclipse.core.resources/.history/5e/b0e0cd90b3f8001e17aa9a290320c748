@@ -1,0 +1,12 @@
+package org.zerock.persistence;
+
+public class JDBCTest {
+	
+	static {
+		try {
+			
+		}catch(Exception e) {
+			
+		}
+	}
+}

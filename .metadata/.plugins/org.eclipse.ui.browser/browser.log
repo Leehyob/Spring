@@ -1,0 +1,59 @@
+
+4월 12, 2024 09:36:20.03 NEW SESSION
+4월 12, 2024 09:36:20.03 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 12, 2024 09:57:22.593 [2920:2144:0412/095722.593:ERROR:cert_verify_proc_builtin.cc(878)] CertVerifyProcBuiltin for global.ib-ibi.com failed:
+4월 12, 2024 09:57:22.594 ----- Certificate i=0 (CN=*.ib-ibi.com,O=KBM Group LLC,L=Louisville,ST=Colorado,C=US) -----
+4월 12, 2024 09:57:22.594 ERROR: Time is after notAfter
+4월 12, 2024 09:57:22.594 
+4월 12, 2024 09:57:22.594 
+4월 12, 2024 11:09:45.428 [2920:10704:0412/110945.428:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 11:09:45.429 [2920:10704:0412/110945.428:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 17:55:52.496 [2920:10704:0412/175552.496:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:52.605 [2920:10704:0412/175552.604:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:52.745 [2920:10704:0412/175552.744:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:52.855 [2920:10704:0412/175552.854:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:52.971 [2920:10704:0412/175552.971:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.80 [2920:10704:0412/175553.080:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.191 [2920:10704:0412/175553.191:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.307 [2920:10704:0412/175553.306:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.432 [2920:10704:0412/175553.432:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.605 [2920:10704:0412/175553.604:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.836 [2920:10704:0412/175553.835:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:53.949 [2920:10704:0412/175553.949:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:54.57 [2920:10704:0412/175554.057:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:54.229 [2920:10704:0412/175554.229:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:54.383 [2920:10704:0412/175554.383:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:54.489 [2920:10704:0412/175554.489:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:54.924 [2920:10704:0412/175554.924:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:55.667 [2920:10704:0412/175555.667:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:57.635 [2920:10704:0412/175557.635:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:57.763 [2920:10704:0412/175557.763:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:57.951 [2920:10704:0412/175557.951:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:58.62 [2920:10704:0412/175558.062:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:58.521 [2920:10704:0412/175558.521:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:58.635 [2920:10704:0412/175558.635:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:58.745 [2920:10704:0412/175558.745:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.78 [2920:10704:0412/175559.078:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.249 [2920:10704:0412/175559.249:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.355 [2920:10704:0412/175559.355:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.469 [2920:10704:0412/175559.469:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.656 [2920:10704:0412/175559.656:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.770 [2920:10704:0412/175559.770:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:55:59.873 [2920:10704:0412/175559.873:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:00.72 [2920:10704:0412/175600.071:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:00.174 [2920:10704:0412/175600.174:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:00.557 [2920:10704:0412/175600.557:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:00.682 [2920:10704:0412/175600.682:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:01.170 [2920:10704:0412/175601.170:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 17:56:02.66 [2920:10704:0412/175602.066:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.295 s for first_image_paint 0.281 s
+4월 12, 2024 18:26:08.151 [2920:10704:0412/182608.150:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 18:26:08.151 [2920:10704:0412/182608.150:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 18:26:19.894 [2920:10704:0412/182619.894:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 18:27:16.978 [2920:10704:0412/182716.977:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+4월 12, 2024 18:55:58.275 [2920:10704:0412/185558.274:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+4월 15, 2024 09:41:52.207 NEW SESSION
+4월 15, 2024 09:41:52.207 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 15, 2024 09:43:18.432 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 15, 2024 09:44:50.681 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 15, 2024 10:05:08.519 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kr.com.ezen.properties.dataSourceTests&apos; to &apos;DataSourceTests&apos;&#x0D;&#x0A;- Original project: &apos;Try2&apos;&#x0D;&#x0A;- Original element: &apos;kr.com.ezen.properties.dataSourceTests&apos;&#x0D;&#x0A;- Renamed element: &apos;kr.com.ezen.properties.DataSourceTests&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;dataSourceTests&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.com.ezen.properties{dataSourceTests.java[dataSourceTests" matchStrategy="1" name="DataSourceTests" qualified="false" references="true" similarDeclarations="false" stamp="1712222605903" textual="false" version="1.0"/>
+</session>
