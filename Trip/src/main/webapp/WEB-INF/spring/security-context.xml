@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bCryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">	<!-- 비밀번호 암호화 -->
+	</bean>
+
+ 	<bean id="accessDeniedHandler" class="kr.trip.security.CustomAccessDeniedHandler"></bean>	<!-- 권한 판단 --> 
+
+	 <!-- <bean id="customLoginSuccessHandler" class="kr.trip.security.CustomLoginSuccessHandler"></bean> -->	 <!--로그인 성공시 동작   --> 
+	
+	<bean id="customUserDetailsService" class="kr.trip.security.CustomUserDetailsService"></bean>	<!-- 유저 정보 출력  -->
+
+	<security:http>	
+<!-- 		<security:form-login login-page="/customLogin" authentication-success-handler-ref="customLoginSuccessHandler"/>	로그인 성공시 동작 -->
+		<security:form-login login-page="/customLogin"/>	<!-- 로그인 성공시 동작 -->
+		
+		<security:csrf disabled="true"/>	
+		
+		<security:logout logout-url="/customLogout" invalidate-session="true" delete-cookies="remember-me, JSESSION_ID"/>	<!-- 로그아웃 동작 -->
+		
+		<security:access-denied-handler ref="accessDeniedHandler"/>	<!-- 권한 판단 -->
+		
+		<security:remember-me data-source-ref="dataSource" token-validity-seconds="604800"/>	<!-- 자동로그인 -->
+		
+	</security:http>
+	
+	<security:authentication-manager>
+	<security:authentication-provider user-service-ref="customUserDetailsService">	<!-- 유저 정보 출력 -->
+			<security:password-encoder ref="bCryptPasswordEncoder"/>	<!-- 비밀번호 암호화 -->
+			<!-- <security:user-service> -->
+			<!-- 	<security:user name="member" password="{noop}1234" authorities="ROLE_MEMBER"/>	-> 임시 아이디 비밀번호 설정
+				<security:user name="admin" password="{noop}1234" authorities="ROLE_MEMBER, ROLE_ADMIN"/> -->
+			<!-- </security:user-service> -->
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+
+</beans>

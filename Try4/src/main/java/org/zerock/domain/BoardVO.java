@@ -1,5 +1,6 @@
 package org.zerock.domain;
 
+
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BoardVO {
-	
+
 	private long bno;
 	private String title;
 	private String content;

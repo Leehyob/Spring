@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.MemberMapper">
+	
+	<insert id="insert">
+		insert into tbl_member(userid, userpw, username) 
+		values(#{userid},#{userpw},#{name})
+	</insert>
+	
+	<insert id="insertAuth">
+		insert into tbl_member_auth(userid, auth) 
+		values(#{userid},#{auth})
+	</insert>
+	
+	<resultMap type="org.zerock.domain.MemberVO" id="memberMap">
+		<id property="userid" column="userid"/>
+		<result property="userid" column="userid"/>
+		<result property="userpw" column="userpw"/>
+		<result property="name" column="username"/>
+		<result property="enabled" column="enabled"/>
+		<result property="regdate" column="regdate"/>
+		<result property="updateDate" column="updateDate"/>
+		<collection property="authList" resultMap="authMap"></collection>
+	</resultMap>
+	
+	<resultMap type="org.zerock.domain.AuthVO" id="authMap">
+		<result property="userid" column="userid"/>
+		<result property="auth" column="auth"/>
+	</resultMap>
+	
+	<select id="read" resultMap="memberMap">
+		select m.userid, userpw, username, enabled, regdate, updateDate, auth
+		 from tbl_member m left join tbl_member_auth a
+		 on m.userid = a.userid
+		 where m.userid = #{userid}
+	</select>
+
+</mapper>

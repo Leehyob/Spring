@@ -57,3 +57,77 @@
 4월 15, 2024 09:43:18.432 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 15, 2024 09:44:50.681 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 15, 2024 10:05:08.519 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 17, 2024 09:43:59.961 NEW SESSION
+4월 17, 2024 09:43:59.961 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 17, 2024 16:43:21.670 [10976:13464:0417/164321.670:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Frame not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+
+4월 18, 2024 09:31:38.279 NEW SESSION
+4월 18, 2024 09:31:38.279 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2024 09:32:13.356 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2024 09:41:46.539 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2024 09:42:19.827 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2024 11:26:50.965 [2240:13412:0418/112650.965:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 18, 2024 15:21:11.934 [2240:13412:0418/152111.933:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+4월 18, 2024 15:22:39.679 [2240:13412:0418/152239.679:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+4월 19, 2024 11:00:32.642 NEW SESSION
+4월 19, 2024 11:00:32.642 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 24, 2024 10:09:08.693 NEW SESSION
+4월 24, 2024 10:09:08.693 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2024 10:12:57.828 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2024 10:17:01.205 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 24, 2024 10:18:38.55 NEW SESSION
+4월 24, 2024 10:18:38.55 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2024 10:24:04.168 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 24, 2024 10:30:21.98 NEW SESSION
+4월 24, 2024 10:30:21.98 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2024 10:56:04.825 [11220:11224:0424/105604.824:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 24, 2024 10:58:29.320 [11220:1284:0424/105829.320:ERROR:cert_verify_proc_builtin.cc(1052)] CertVerifyProcBuiltin for cs.axis-marketplace.com failed:
+4월 24, 2024 10:58:29.320 ----- Certificate i=0 (CN=*.axis-marketplace.com) -----
+4월 24, 2024 10:58:29.321 ERROR: Time is after notAfter
+4월 24, 2024 10:58:29.321 
+4월 24, 2024 10:58:29.321 
+4월 24, 2024 11:20:08.606 [11220:1284:0424/112008.606:ERROR:cert_verify_proc_builtin.cc(1052)] CertVerifyProcBuiltin for cookie-sync.api.soundcast.fm failed:
+4월 24, 2024 11:20:08.607 ----- Certificate i=0 (CN=*.api.soundcast.fm) -----
+4월 24, 2024 11:20:08.607 ERROR: Time is after notAfter
+4월 24, 2024 11:20:08.607 
+4월 24, 2024 11:20:08.607 
+4월 24, 2024 14:34:29.367 [11220:11224:0424/143429.367:ERROR:device_event_log_impl.cc(195)] [14:34:29.367] Bluetooth: bluetooth_adapter_winrt.cc:1056 Getting Default Adapter failed.
+4월 24, 2024 15:26:29.114 [11220:11224:0424/152629.110:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 24, 2024 15:26:31.721 [11220:11224:0424/152631.721:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 24, 2024 17:24:43.342 [11220:11224:0424/172443.342:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Frame not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+4월 24, 2024 17:33:45.747 [11220:1248:0424/173345.747:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 24, 2024 17:50:57.175 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2024 17:52:53.953 [4696:3236:0424/175253.952:ERROR:sharing_service.cc(250)] Device un-registration failed with fatal error
+
+4월 29, 2024 09:37:12.585 NEW SESSION
+4월 29, 2024 09:37:12.585 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 09:52:13.453 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 10:02:32.44 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 10:07:15.963 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 10:31:08.217 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 10:46:44.767 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 10:59:52.277 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 29, 2024 12:39:26.09 [15124:4208:0429/123926.009:ERROR:cert_verify_proc_builtin.cc(1052)] CertVerifyProcBuiltin for global.ib-ibi.com failed:
+4월 29, 2024 12:39:26.10 ----- Certificate i=0 (CN=*.ib-ibi.com,O=KBM Group LLC,L=Louisville,ST=Colorado,C=US) -----
+4월 29, 2024 12:39:26.10 ERROR: Time is after notAfter
+4월 29, 2024 12:39:26.10 
+4월 29, 2024 12:39:26.10 
+4월 29, 2024 15:51:54.232 [15124:4340:0429/155154.231:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+4월 29, 2024 15:52:24.535 [15124:4340:0429/155224.534:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 29, 2024 15:52:45.709 [15124:4340:0429/155245.709:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 29, 2024 15:52:52.794 [15124:4340:0429/155252.793:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 29, 2024 15:53:04.549 [15124:4340:0429/155304.548:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 29, 2024 16:00:30.472 [15124:4340:0429/160030.472:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 29, 2024 16:10:30.475 [15124:4340:0429/161030.475:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+
+5월 03, 2024 10:01:15.461 NEW SESSION
+5월 03, 2024 10:01:15.461 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 03, 2024 14:11:34.553 [11904:11540:0503/141134.552:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 03, 2024 14:17:30.187 [11904:11540:0503/141730.186:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 03, 2024 14:54:43.947 [11904:11540:0503/145443.947:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+5월 03, 2024 15:17:41.460 [11904:11540:0503/151741.459:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
