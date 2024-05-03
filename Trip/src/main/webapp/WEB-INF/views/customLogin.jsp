@@ -32,7 +32,7 @@
 		<hr>
 		<div id="social">
 		<p style="color:gray;">소셜 로그인</p>
-		<a id="kakaoBtn" href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=3334abd3f2359d5a2d50f1d20357c04f&redirect_uri=https://192.168.0.49:8181/login/kakao">Kakao 로그인</a>
+		<a id="kakaoBtn" href="https://kauth.kakao.com/oauth/authorize?client_id=3334abd3f2359d5a2d50f1d20357c04f&redirect_uri=http://localhost:8181/login/kakao&response_type=code">Kakao 로그인</a>
 		<hr>
 		</div>
 	</form>
