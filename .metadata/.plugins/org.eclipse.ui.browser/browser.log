@@ -144,3 +144,17 @@
 5월 03, 2024 19:22:42.574 [11904:11540:0503/192242.574:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
 5월 03, 2024 19:22:52.685 [11904:11540:0503/192252.685:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
 5월 03, 2024 19:22:59.554 [11904:11540:0503/192259.554:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+
+5월 07, 2024 09:38:42.802 NEW SESSION
+5월 07, 2024 09:38:42.802 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 07, 2024 10:39:10.445 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 07, 2024 11:59:26.937 [18376:15224:0507/115926.936:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 11:59:26.937 [18376:15224:0507/115926.936:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 15:29:06.366 [18376:15224:0507/152906.366:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 16:36:06.507 [18376:15224:0507/163606.506:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 17:18:24.313 [18376:15224:0507/171824.313:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 17:19:12.582 [18376:15224:0507/171912.581:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 07, 2024 17:32:54.103 [18376:3404:0507/173254.103:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+5월 07, 2024 17:33:19.473 [18376:3404:0507/173319.473:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+5월 07, 2024 17:33:22.53 [18376:3404:0507/173322.053:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+5월 07, 2024 17:33:33.478 [18376:3404:0507/173333.478:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105

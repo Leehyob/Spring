@@ -25,6 +25,11 @@ public class MemberServiceImpl implements MemberService{
 	public void insertAuth(AuthVO auth) {
 		memberMapper.insertAuth(auth);
 	}
+
+	@Override
+	public boolean selectId(String id) {
+		return memberMapper.selectId(id);
+	}
 	
 	
 

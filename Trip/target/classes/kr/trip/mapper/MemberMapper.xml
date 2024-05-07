@@ -37,4 +37,10 @@
 		on m.member_email = a.member_email
 		where m.member_email = #{member_email}
 	</select>
+	
+	<select id="selectId" resultType="boolean">
+		SELECT COUNT(*)
+		  FROM MEMBER
+		 WHERE member_email = #{member_email}
+	</select>
 </mapper>

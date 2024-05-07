@@ -11,6 +11,7 @@ public interface MemberMapper {
 	
 	public void insertAuth(AuthVO auth);
 	
+	public boolean selectId(String id);
 	/*
 	 * public int update(MemberVO member);
 	 * 

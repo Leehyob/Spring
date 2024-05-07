@@ -14,9 +14,9 @@
 			${error}
 		</div>
 		<div class="container">
-			<label for="member_email"><b>Email</b></label> 
+			<label for="username"><b>Email</b></label> 
 			<input type="text" placeholder="Enter Email" name="username"><br>
-			<label for="pwd"><b>Password</b></label> 
+			<label for="password"><b>Password</b></label> 
 			<input type="password" placeholder="Enter Password" name="password"><br> <label>
 			<input type="checkbox" checked="checked" name="remember">
 				Remember me
@@ -26,7 +26,6 @@
 		</div>
 
 		<div class="container" style="background-color: #f1f1f1">
-			<button type="button" class="cancelbtn">Cancel</button><br>
 			<span class="pwd">Forgot <a href="#">Email?</a>/<a href="#">password?</a></span>
 		</div>
 		<hr>
@@ -57,12 +56,15 @@
 			
 			var loginForm = $("#loginForm");
 			
+			var username = $("input[name='username']").clone();
+			var password = $("input[name='password']").clone();
+			
 			$("#loginBtn").on("click",function(e){
-				if("input[name='username']"===null){
+				if(username===null){
 					alert("이메일을 입력하세요");
 					return;
 				}
-				if("input[name='password']"===null){
+				if(password===null){
 					alert("비밀번호를 입력하세요");
 					return;
 				}
@@ -73,40 +75,5 @@
 	
 	</script>
 	
-<!-- 	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script> -->
-<!-- 	<script type="text/javascript">
-	
-		    $(function(){
-		    	
-		    	$("#kakaoBtn").on("click",function(e){
-		    		e.preventDefault();
-		    		
-		    		kakao.init('6e726c49a7579818d6c756e5729e8db5');
-		    		
-		    		kakao.Auth.login({
-		    			success:function(auth){
-		    				kakao.API.request({
-		    					url : 'v2/user/me',
-		    					success : function(response){
-		    						var account = response.kakao_account;
-		    						
-		    						$('#form-kakao-login input[name=member_email]').val(account.email);
-		    						$('#form-kakao-login input[name=name]').val(account.profile.nickname);
-		    						$('#form-kakao-login input[name=profile]').val(account.profile.img);
-		    						
-		    						document.querySelector("#form-kakao-login ").submit();
-		    					},
-		    					fail : function(error){
-		    						console.log(error);
-		    					}
-		    				})
-		    			},
-		    			fail : function(error){
-		    				console.log(error);
-		    			}
-		    		})
-		    	})
-		    })
-		
-	</script> -->
+
 </html>

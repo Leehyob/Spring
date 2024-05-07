@@ -3,6 +3,8 @@ package kr.trip.controller;
 import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.trip.domain.AuthVO;
@@ -68,4 +71,34 @@ public class MemberController {
 		
 	}
 
+	@PostMapping("/ConfirmId")
+	@ResponseBody
+	public ResponseEntity<Boolean> confirmId(String id) {
+		log.info("ConfirmId.........");
+		log.info("id : " + id);
+		boolean result = true;
+		
+		if(id.trim().isEmpty()) {
+			log.info("id : " + id);
+			result = false;
+		} else {
+			if (memberService.selectId(id)) {
+				result = false;
+			} else {
+				result = true;
+			}
+		}
+		
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+	@GetMapping("/mailCheck")
+	@ResponseBody
+	public void mailCheck(String email) {
+		System.out.println("이메일 인증 요청이 들어옴!");
+		System.out.println("이메일 인증 이메일 : " + email);
+	}
+	
+	
+	
 }

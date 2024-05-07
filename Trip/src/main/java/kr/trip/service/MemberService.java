@@ -8,4 +8,6 @@ public interface MemberService {
 	public void register(MemberVO member);
 	
 	public void insertAuth(AuthVO auth);
+	
+	public boolean selectId(String id);
 }
