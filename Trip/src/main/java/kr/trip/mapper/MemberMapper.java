@@ -1,5 +1,7 @@
 package kr.trip.mapper;
 
+import org.apache.ibatis.annotations.Param;
+
 import kr.trip.domain.AuthVO;
 import kr.trip.domain.MemberVO;
 
@@ -12,8 +14,12 @@ public interface MemberMapper {
 	public void insertAuth(AuthVO auth);
 	
 	public boolean selectId(String id);
+	
+	public String findId(@Param("name") String name,@Param("phone") String phone);
+	
+	 public int update(MemberVO member);
 	/*
-	 * public int update(MemberVO member);
+	 *
 	 * 
 	 * public int delete(String member_email);
 	 * 

@@ -29,6 +29,7 @@ public class MemberVO implements UserDetails{
 	private Date member_regdate;
 	private List<AuthVO> authList;
 	
+	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return authList.stream().map(auth -> new SimpleGrantedAuthority(auth.getAuth())).collect(Collectors.toList());

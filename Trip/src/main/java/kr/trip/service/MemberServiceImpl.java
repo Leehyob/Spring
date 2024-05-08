@@ -2,6 +2,7 @@ package kr.trip.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.trip.domain.AuthVO;
 import kr.trip.domain.MemberVO;
@@ -29,6 +30,22 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public boolean selectId(String id) {
 		return memberMapper.selectId(id);
+	}
+
+	@Override
+	public String findId(String name, String phone) {
+		System.out.println("----------findId-----------------");
+		System.out.println(name);
+		System.out.println(phone.trim());
+		
+		String str = memberMapper.findId(name, phone.trim());
+		System.out.println(str);
+		return str;
+	}
+
+	@Override
+	public boolean update(MemberVO member) {
+		return memberMapper.update(member)==1;
 	}
 	
 	

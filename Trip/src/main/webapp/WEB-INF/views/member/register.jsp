@@ -9,7 +9,7 @@
 <body>
 
 <div id="id01" class="modal">
-  <form class="modal-content" action="/member/join" method="post">
+  <form class="modal-content" action="/member/register" method="post">
     <div class="container">
       <h1>회원가입</h1>
       <hr>
@@ -84,6 +84,12 @@
 				alert("휴대폰 번호를 입력해주세요")
 				return false;
 			}
+			if($(".mail-check-input").val()===""){
+				alert("이메일 인증을 먼저 진행해주세요!")
+				return false;
+			}
+			alert("회원가입이 완료되었습니다!");
+			return;
 			
 		})
 		
@@ -116,21 +122,42 @@ $("#id").on("focusout", function() {
     	});
 		
 		$('#mail-Check-Btn').on("click",function() {
-			const email = $('#id').val(); // 이메일 주소값 얻어오기!
-			console.log('완성된 이메일 : ' + eamil); // 이메일 오는지 확인
-			const checkInput = $('.mail-check-input') // 인증번호 입력하는곳 
+			var email = $('#id').val(); // 이메일 주소값 얻어오기!
+			console.log('완성된 이메일 : ' + email); // 이메일 오는지 확인
+			var checkInput = $('.mail-check-input') // 인증번호 입력하는곳 
 			
 			$.ajax({
-				type : 'get',
-				url : '<c:url value ="/user/mailCheck?email="/>'+email, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
-				success : function (data) {
-					console.log("data : " +  data);
+				type : 'post',
+				url : '/mailCheck', // GET방식이라 Url 뒤에 email을 뭍힐수있다.,
+				data :{ email : email},
+				dataType : 'json',
+				success : function (result) {
+					console.log("result : " +  result);
 					checkInput.attr('disabled',false);
-					code =data;
+					code =result;
 					alert('인증번호가 전송되었습니다.')
 				}			
 			}); // end ajax
 		}); // end send eamil
+		
+		$(".mail-check-input").on("focusout", function() {
+	    	var inputCode = $(".mail-check-input").val(); //인증번호 입력 칸에 작성한 내용 가져오기
+	    	
+	    	console.log("입력코드 : " + inputCode);
+	    	console.log("인증코드 : " + code);
+	    		
+	    	if(Number(inputCode) === code){
+	        	$("#mail-check-warn").html('인증번호가 일치합니다.');
+	        	$("#mail-check-warn").css('color', 'green');
+	    		$('#mail-Check-Btn').attr('disabled', true);
+	    		$('#id').attr('readonly', true);
+	    		$(".signupbtn").attr("disabled", false);
+	    	}else{
+	        	$("#mail-check-warn").html('인증번호가 불일치 합니다. 다시 확인해주세요!');
+	        	$("#mail-check-warn").css('color', 'red');
+	        	$(".signupbtn").attr("disabled", true);
+	    	}
+	    });
 	})
 	
 </script>

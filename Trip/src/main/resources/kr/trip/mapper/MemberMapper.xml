@@ -43,4 +43,14 @@
 		  FROM MEMBER
 		 WHERE member_email = #{member_email}
 	</select>
+	
+	<select id="findId" resultType="string">
+		select member_email from member where name = #{name} and phone = #{phone}
+	</select>
+	
+	<update id="update">
+		update member set pwd = #{pwd} where member_email = #{member_email}
+	</update>
+	
+	
 </mapper>

@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="/resources/"/>
 		<list key="findhistory">
+			<item value="&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;"/>
 			<item value="../"/>
 			<item value="resources/"/>
 			<item value="/resource"/>

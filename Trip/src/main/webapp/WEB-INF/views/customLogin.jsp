@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="container" style="background-color: #f1f1f1">
-			<span class="pwd">Forgot <a href="#">Email?</a>/<a href="#">password?</a></span>
+			<span class="pwd">Forgot <a href="/member/findid">Email?</a>/<a href="/member/findPwd">password?</a></span>
 		</div>
 		<hr>
 		<div id="social">
@@ -35,7 +35,7 @@
 		<hr>
 		</div>
 	</form>
-	<p>아직 아이디가 없으신가요?<button id="goJoin">회원가입하러 가기</button></p>
+	<p>아직 아이디가 없으신가요?<a href="/member/register" >회원가입하러 가기</a></p>
 	
 	<form id="form-kakao-login" method="post" action="kakao-login">
 		<input type="hidden" name="member_email"/>
@@ -50,24 +50,21 @@
 	<script>
 		$(document).ready(function(){
 			
-			$("#goJoin").on("click",function(e){
-				self.location = '/member/join';
-			})
-			
 			var loginForm = $("#loginForm");
 			
-			var username = $("input[name='username']").clone();
-			var password = $("input[name='password']").clone();
+			var username = $("input[name='username']").val();
+			var password = $("input[name='password']").val();
 			
 			$("#loginBtn").on("click",function(e){
-				if(username===null){
+				e.preventDefault();
+				
+				if(username===""){
 					alert("이메일을 입력하세요");
-					return;
 				}
-				if(password===null){
+				else if(password===""){
 					alert("비밀번호를 입력하세요");
-					return;
 				}
+				loginForm.submit();
 				
 			})
 			

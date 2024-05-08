@@ -5,6 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
+<button type="button" onclick="href.location='/customLogout'">logout</button>
 <h1>
 	Hello world!  
 </h1>
