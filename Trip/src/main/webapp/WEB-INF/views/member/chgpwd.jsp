@@ -38,12 +38,13 @@
 				alert("비밀번호를 재입력해주세요")
 				return false
 			}
+			if(pwdForm.find("input[name='pwd']").val().length<9){
+				alert("비밀번호는 8자리 이상이어야 합니다.")
+				return false;
+			}
 			if(pwdForm.find("input[name='pwd']").val()!=pwdForm.find("input[name='pwd-repeat']").val()){
 				alert("비밀번호가 일치하지 않습니다")
 				return false
-			}
-			if(pwdForm.find("input[name='pwd']").val()<9){
-				alert("비밀번호는 8자리 이상이어야 합니다.")
 			}
 			alert("비밀번호가 변경되었습니다")
 			return true;
