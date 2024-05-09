@@ -13,7 +13,7 @@
 <button type="button" onclick="location.href='/member/findid'">아이디 다시 찾기</button>
 </c:if>
 <c:if test="${not empty member_email}">
-	회원님의 아이디는 ${member_email} 입니다.
+	회원님의 아이디는${member_email}입니다.
 <button type="button" onclick="location.href='/customLogin'">로그인하러 가기</button>
 </c:if>
 

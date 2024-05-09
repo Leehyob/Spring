@@ -1,5 +1,7 @@
 package kr.trip.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,12 +35,12 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public String findId(String name, String phone) {
+	public List<String> findId(String name, String phone) {
 		System.out.println("----------findId-----------------");
 		System.out.println(name);
 		System.out.println(phone.trim());
 		
-		String str = memberMapper.findId(name, phone.trim());
+		List<String> str = memberMapper.findId(name, phone.trim());
 		System.out.println(str);
 		return str;
 	}

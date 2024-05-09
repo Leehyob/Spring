@@ -1,5 +1,7 @@
 package kr.trip.mapper;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +22,11 @@ public class MapperTest {
 	@Test
 	public void testFindId() {
 		String name = "이효빈";
-		String phone = "010-1111-1111";
+		String phone = "01025521653";
 		
 		log.info("------------------------------");
 		
-		String str = memberMapper.findId(name, phone);
+		List<String> str = memberMapper.findId(name, phone);
 		
 		log.info(str);
 	}

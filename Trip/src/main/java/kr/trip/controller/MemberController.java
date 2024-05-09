@@ -3,6 +3,7 @@ package kr.trip.controller;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -226,9 +227,10 @@ log.info("전달 받은 이메일 주소 : " + email);
 		log.info("name : " + name);
 		log.info(phone);
 
-		String str = memberService.findId(name, phone);
+		List<String> str = memberService.findId(name, phone);
 		
 		System.out.println("str..............." + str);
+		
 		rttr.addAttribute("member_email",str);
 		
 		return "redirect:/member/id";
