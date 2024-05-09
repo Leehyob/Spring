@@ -2,9 +2,11 @@ package kr.trip.service;
 
 import java.util.HashMap;
 
+import kr.trip.domain.MemberVO;
+
 public interface KakaoLoginService {
 
 	String getAccessToken(String authorize_code) throws Throwable;
 
-	public HashMap<String, Object> getUserInfo(String access_Token) throws Throwable;
+	public MemberVO getUserInfo(String access_Token) throws Throwable;
 }

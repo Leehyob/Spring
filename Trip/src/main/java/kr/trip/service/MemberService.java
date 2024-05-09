@@ -5,6 +5,8 @@ import kr.trip.domain.MemberVO;
 
 public interface MemberService {
 
+	public MemberVO read(String member_email);
+	
 	public void register(MemberVO member);
 	
 	public void insertAuth(AuthVO auth);

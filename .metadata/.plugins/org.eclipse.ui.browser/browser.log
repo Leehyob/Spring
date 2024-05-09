@@ -158,3 +158,8 @@
 5월 07, 2024 17:33:19.473 [18376:3404:0507/173319.473:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
 5월 07, 2024 17:33:22.53 [18376:3404:0507/173322.053:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
 5월 07, 2024 17:33:33.478 [18376:3404:0507/173333.478:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+
+5월 09, 2024 09:39:54.476 NEW SESSION
+5월 09, 2024 09:39:54.476 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 09, 2024 09:42:24.879 [12728:11840:0509/094224.878:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 09, 2024 09:42:24.879 [12728:11840:0509/094224.878:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost

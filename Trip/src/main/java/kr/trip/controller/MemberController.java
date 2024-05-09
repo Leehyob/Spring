@@ -46,6 +46,11 @@ public class MemberController {
 	@Autowired
 	private BCryptPasswordEncoder bc;
 	
+	@GetMapping("/member/agree")
+	public void agree() {
+		
+	}
+	
 	
 	
 	@GetMapping("/member/register")
@@ -71,22 +76,64 @@ public class MemberController {
 	@Autowired
 	public KakaoLoginService kakaoS;
 	
+	
 	@GetMapping("/login/kakao")
-	public String kakaoOauth(@RequestParam(required = false) String code) throws Throwable {
+	public String kakaoOauth(@RequestParam(required = false) String code, Model model) throws Throwable {
 		System.out.println(code);
 		
 		String access_Token = kakaoS.getAccessToken(code);
 		System.out.println("###access_Token#### : " + access_Token);
 		
 		// 3번
-		HashMap<String, Object> userInfo = kakaoS.getUserInfo(access_Token);
-		System.out.println("###nickname#### : " + userInfo.get("nickname"));
-		System.out.println("###email#### : " + userInfo.get("email"));
+		MemberVO userInfo = kakaoS.getUserInfo(access_Token);
+		System.out.println("###nickname#### : " + userInfo.getName());
+		System.out.println("###email#### : " + userInfo.getMember_email());
+		model.addAttribute("email",userInfo.getMember_email());
+		model.addAttribute("name",userInfo.getName());
 		
-		return "redirect:/member/register";
+		if(memberService.read(userInfo.getMember_email())!= null) {
+			return "/main";
+		}else {
+			return "/login/kakao";			
+		}
+		
 	}
 	
+	@PostMapping("/login/kakao")
+	@Transactional
+	public String kakaoRegister(@RequestParam("member_email") String member_email, @RequestParam("name") String name,
+			@RequestParam("phone")String phone, RedirectAttributes rttr ) {
+		MemberVO vo = new MemberVO();
+		
+		vo.setMember_email(member_email);
+		vo.setName(name);
+		vo.setPhone(phone);
+		
+		System.out.println("카카오 db 저장 : " + vo);
+		memberService.register(vo);
+		memberService.insertAuth(new AuthVO(member_email, "ROLE_MEMBER"));
+		
+		return "redirect:/main";
+	}
+	
+	/*
+	 * @GetMapping("/member/kakaoRegister") public void kakaoRegister() {
+	 * 
+	 * }
+	 * 
+	 * @PostMapping("/member/kakaoRegister") public String kakaoRegister(MemberVO
+	 * member, RedirectAttributes rttr) {
+	 * 
+	 * memberService.register(member);
+	 * 
+	 * return "redirect:/customLogin"; }
+	 */
 
+	@GetMapping("/login/kakaoLogout")
+	public String kakaoLogout() {
+		return "redirect:/customLogin";
+	}
+	
 	@PostMapping("/ConfirmId")
 	@ResponseBody
 	public ResponseEntity<Boolean> confirmId(String id) {
@@ -193,28 +240,40 @@ log.info("전달 받은 이메일 주소 : " + email);
 		log.info("member 아이디 : " + member_email);
 	}
 	
-	@GetMapping("/member/findPwd")
+	@GetMapping("/member/findpwd")
 	public void findPwd() {
 		
 	}
 	
-	@PostMapping("/member/findPwd")
+	@PostMapping("/member/findpwd")
 	public String findPwd(@RequestParam("member_email") String member_email,RedirectAttributes rttr) {
+		
+		System.out.println("비밀번호 찾기 이메일 : " + member_email);
 		
 		MemberVO vo = new MemberVO();
 		
-		if(vo.getMember_email()==member_email) {
-			vo.setMember_email(member_email);			
+		if(memberService.read(member_email)!=null) {
+			vo = memberService.read(member_email);			
 		}
-		memberService.update(vo);
+
 		rttr.addAttribute("member_email",vo.getMember_email());
-		return "redirect:/member/updatePwd";
+		return "redirect:/member/chgpwd";
 	}
 	
-	@GetMapping("/member/updatePwd")
+	@GetMapping("/member/chgpwd")
 	public void updatePwd(String member_email, Model model) {
 		model.addAttribute("member_email",member_email);
 		log.info(member_email);
+	}
+	
+	@PostMapping("/member/chgpwd")
+	public String updatePwd(@RequestParam("member_email") String member_email, @RequestParam("pwd") String pwd, RedirectAttributes rttr) {
+		
+		MemberVO vo = memberService.read(member_email);
+		vo.setPwd(bc.encode(pwd));
+		memberService.update(vo);
+		
+		return "redirect:/customLogin";
 	}
 	
 	

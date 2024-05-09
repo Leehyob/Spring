@@ -10,10 +10,19 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.thoughtworks.qdox.model.Member;
+
+import kr.trip.domain.AuthVO;
+import kr.trip.domain.MemberVO;
+import kr.trip.mapper.MemberMapper;
 
 @Service
 public class KakaoLoginServiceImpl implements KakaoLoginService{
@@ -80,10 +89,13 @@ public class KakaoLoginServiceImpl implements KakaoLoginService{
 		return access_Token;
 	}
 
+	@Autowired
+	private MemberMapper memberMapper;
+	
 	@Override
-	public HashMap<String, Object> getUserInfo(String access_Token) throws Throwable {
+	public MemberVO getUserInfo(String access_Token) throws Throwable {
 		// 요청하는 클라이언트마다 가진 정보가 다를 수 있기에 HashMap타입으로 선언
-				HashMap<String, Object> userInfo = new HashMap<String, Object>();
+				MemberVO userInfo = new MemberVO();
 				String reqURL = "https://kapi.kakao.com/v2/user/me";
 
 				try {
@@ -107,36 +119,37 @@ public class KakaoLoginServiceImpl implements KakaoLoginService{
 					}
 					System.out.println("response body : " + result);
 					System.out.println("result type" + result.getClass().getName()); // java.lang.String
-
-					try {
+					
+					
+					
 						// jackson objectmapper 객체 생성
-						ObjectMapper objectMapper = new ObjectMapper();
+					
 						// JSON String -> Map
-						Map<String, Object> jsonMap = objectMapper.readValue(result, new TypeReference<Map<String, Object>>() {
-						});
+						JsonParser parser = new JsonParser();
+						JsonElement element = parser.parse(result);
 
-						System.out.println(jsonMap.get("properties"));
 
-						Map<String, Object> properties = (Map<String, Object>) jsonMap.get("properties");
-						Map<String, Object> kakao_account = (Map<String, Object>) jsonMap.get("kakao_account");
+						JsonObject properties = element.getAsJsonObject().get("properties").getAsJsonObject();
+						JsonObject kakao_account = element.getAsJsonObject().get("kakao_account").getAsJsonObject();
 
 						// System.out.println(properties.get("nickname"));
 						// System.out.println(kakao_account.get("email"));
 
-						String nickname = properties.get("nickname").toString();
-						String email = kakao_account.get("email").toString();
+						String nickname = properties.get("nickname").getAsString();
+						String email = kakao_account.get("email").getAsString();
 
-						userInfo.put("nickname", nickname);
-						userInfo.put("email", email);
-
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
+						
+						userInfo.setName(nickname);
+						userInfo.setMember_email(email);
+						
 
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				return userInfo;
+				
+				
+					return userInfo;					
+				
 		
 	}
 

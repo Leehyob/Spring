@@ -9,6 +9,7 @@
 <body>
 	<h1>login</h1>
 	<form id="loginForm" action="/login" method="post">
+	<input type="hidden" name="member_email" value="">
 		<%-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> --%>
 		<div class="error">
 			${error}
@@ -18,7 +19,7 @@
 			<input type="text" placeholder="Enter Email" name="username"><br>
 			<label for="password"><b>Password</b></label> 
 			<input type="password" placeholder="Enter Password" name="password"><br> <label>
-			<input type="checkbox" checked="checked" name="remember">
+			<input type="checkbox" checked="checked" name="remember-me">
 				Remember me
 			</label>
 			<br><button type="submit" id="loginBtn">Login</button>
@@ -26,7 +27,7 @@
 		</div>
 
 		<div class="container" style="background-color: #f1f1f1">
-			<span class="pwd">Forgot <a href="/member/findid">Email?</a>/<a href="/member/findPwd">password?</a></span>
+			<span class="pwd">Forgot <a href="/member/findid">Email?</a>/<a href="/member/findpwd">password?</a></span>
 		</div>
 		<hr>
 		<div id="social">
@@ -35,7 +36,7 @@
 		<hr>
 		</div>
 	</form>
-	<p>아직 아이디가 없으신가요?<a href="/member/register" >회원가입하러 가기</a></p>
+	<p>아직 아이디가 없으신가요?<a href="/member/agree" >회원가입하러 가기</a></p>
 	
 	<form id="form-kakao-login" method="post" action="kakao-login">
 		<input type="hidden" name="member_email"/>
@@ -52,21 +53,22 @@
 			
 			var loginForm = $("#loginForm");
 			
-			var username = $("input[name='username']").val();
-			var password = $("input[name='password']").val();
 			
-			$("#loginBtn").on("click",function(e){
-				e.preventDefault();
+			$("#loginBtn").on("click",function(){
 				
-				if(username===""){
+				if($("input[name='username']").val()===""){
 					alert("이메일을 입력하세요");
+					return false;
 				}
-				else if(password===""){
+				else if($("input[name='password']").val()===""){
 					alert("비밀번호를 입력하세요");
+					return false;
 				}
-				loginForm.submit();
+				return;
 				
 			})
+			
+			
 			
 		})	
 	

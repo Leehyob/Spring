@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import kr.trip.domain.MemberVO;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -26,6 +27,18 @@ public class MapperTest {
 		String str = memberMapper.findId(name, phone);
 		
 		log.info(str);
+	}
+	
+	@Test
+	public void updateTest() {
+		String member_email = "gyqls1653@daum.net";
+		String changePwd = "123456789";
+		System.out.println(memberMapper.read(member_email));
+		
+		MemberVO vo = memberMapper.read(member_email);
+		vo.setPwd(changePwd);
+		memberMapper.update(vo);
+		System.out.println(memberMapper.update(vo));
 	}
 	
 }

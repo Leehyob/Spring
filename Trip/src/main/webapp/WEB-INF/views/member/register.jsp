@@ -14,7 +14,7 @@
       <h1>회원가입</h1>
       <hr>
       <label><b>이메일</b></label>
-      <input type="text" placeholder="Enter Email" id="id" name="member_email" autofocus="autofocus"> 
+      <input type="text" placeholder="member@email.com" id="id" name="member_email" autofocus="autofocus"> 
 		<label id="label1"></label>
 			<br><button type="button" class="btn btn-primary" id="mail-Check-Btn">본인인증</button>
 		<div class="mail-check-box">
@@ -49,17 +49,25 @@
 	
 	$(document).ready(function(){
 		
+		function email_check(email) {
+			var reg = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+			return reg.test(email);
+		}
+		
 		$(".signupbtn").on("click",function(){
 			var joinForm = $(".modal-content");
+			
 			
 			if(!joinForm.find("input[name='member_email']").val()){
 				alert("이메일을 입력하세요");
 				return false;
+			}else{
+				if(!email_check(email)){
+					alert("이메일 형식에 맞게 입력해주세요");
+					return false;
+				}
 			}
-			 if(!joinForm.find("input[name='member_email']").val().match('@')){
-				alert("이메일 형식이 올바르지 않습니다!")
-				return false;
-			} 
+			 
 			 if(!joinForm.find("#emailCheckBtn")){
 					alert("이메일을 입력하세요");
 					return false;
