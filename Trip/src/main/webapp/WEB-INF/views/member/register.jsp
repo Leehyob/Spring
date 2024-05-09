@@ -49,10 +49,7 @@
 	
 	$(document).ready(function(){
 		
-		function email_check(email) {
-			var reg = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-			return reg.test(email);
-		}
+		
 		
 		$(".signupbtn").on("click",function(){
 			var joinForm = $(".modal-content");
@@ -61,11 +58,6 @@
 			if(!joinForm.find("input[name='member_email']").val()){
 				alert("이메일을 입력하세요");
 				return false;
-			}else{
-				if(!email_check(email)){
-					alert("이메일 형식에 맞게 입력해주세요");
-					return false;
-				}
 			}
 			 
 			 if(!joinForm.find("#emailCheckBtn")){
@@ -109,6 +101,17 @@ $("#id").on("focusout", function() {
     			$("#label1").css("color", "red").text("공백은 ID로 사용할 수 없습니다.");
     			return false;
     		}
+    		
+    		function email_check(id) {
+    			var reg = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+    			return reg.test(id);
+    		}
+    		
+			if(!email_check(id)){
+				$("#label1").css("color", "red").text("이메일 형식이 올바르지 않습니다.");
+				return false;
+			}
+			
     		
         	//Ajax로 전송
         	$.ajax({
