@@ -11,7 +11,7 @@
 <h1>main</h1>
 <h2>${member_email}</h2>
 <h2>${auth}</h2>
-<c:if test="${auth eq 'ROLE_MEMBER'}">
+<c:if test="${auth eq '[ROLE_MEMBER]'}">
 	<button type="button" id="cash" onclick="location.href='/main/cash'">유료회원 전환</button>
 </c:if>
 <c:if test="${not empty member_email && member_email ne 'anonymousUser'}">
