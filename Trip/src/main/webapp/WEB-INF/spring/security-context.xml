@@ -15,6 +15,8 @@
 	<bean id="customUserDetailsService" class="kr.trip.security.CustomUserDetailsService"></bean>	<!-- 유저 정보 출력  -->
 
 	<security:http>	
+		<security:intercept-url pattern="/main/cash" access="hasRole('ROLE_MEMBER')"/>	<!-- 권한 설정 -->
+
 		<security:form-login login-page="/customLogin" authentication-success-handler-ref="customLoginSuccessHandler"/>
 		<security:form-login login-page="/customLogin" />	<!-- 로그인 성공시 동작 -->
 		

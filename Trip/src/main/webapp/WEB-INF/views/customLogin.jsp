@@ -23,6 +23,7 @@
 				Remember me
 			</label>
 			<br><button type="submit" id="loginBtn">Login</button>
+			<button type="button" id="mainBtn" onclick="location.href='/main'">메인으로</button>
 
 		</div>
 

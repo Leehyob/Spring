@@ -165,3 +165,8 @@
 5월 09, 2024 09:42:24.879 [12728:11840:0509/094224.878:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
 5월 09, 2024 18:48:52.452 [12728:11840:0509/184852.451:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
 5월 09, 2024 18:56:35.746 [12728:11840:0509/185635.745:ERROR:interface_endpoint_client.cc(707)] Message 5 rejected by interface blink.mojom.WidgetHost
+5월 09, 2024 19:10:10.715 [12728:11840:0509/191010.715:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 09, 2024 19:10:10.715 [12728:11840:0509/191010.715:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+5월 10, 2024 09:45:52.654 NEW SESSION
+5월 10, 2024 09:45:52.654 Created TensorFlow Lite XNNPACK delegate for CPU.
