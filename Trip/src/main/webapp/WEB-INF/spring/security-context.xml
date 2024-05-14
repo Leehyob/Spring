@@ -2,8 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:security="http://www.springframework.org/schema/security"
-	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.2.xsd
-		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/security 
+						http://www.springframework.org/schema/security/spring-security-5.2.xsd
+						http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="bCryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">	<!-- 비밀번호 암호화 -->
 	</bean>
@@ -14,6 +15,7 @@
 	
 	<bean id="customUserDetailsService" class="kr.trip.security.CustomUserDetailsService"></bean>	<!-- 유저 정보 출력  -->
 
+	
 	<security:http>	
 		<security:intercept-url pattern="/main/cash" access="hasRole('ROLE_MEMBER')"/>	<!-- 권한 설정 -->
 
@@ -27,8 +29,9 @@
 		<security:access-denied-handler ref="accessDeniedHandler"/>	<!-- 권한 판단 -->
 		
 		<security:remember-me data-source-ref="dataSource" token-validity-seconds="604800"/>	<!-- 자동로그인 -->
-		
+
 	</security:http>
+	
 	
 	<security:authentication-manager>
 	<security:authentication-provider user-service-ref="customUserDetailsService">	<!-- 유저 정보 출력 -->

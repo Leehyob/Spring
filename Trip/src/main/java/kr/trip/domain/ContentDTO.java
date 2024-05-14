@@ -12,24 +12,24 @@ import lombok.Data;
 @Builder
 public class ContentDTO {
 
-	private Response response;
+	public Response response;
 	
 	@Data
 	@AllArgsConstructor
-	class Response{
+	public class Response{
 		private Header header;
 		private Body body;
 		
 		@Data
 		@AllArgsConstructor
-		class Header{
+		public class Header{
 			private String resultCode;
 			private String resultMsg;
 		}
 		
 		@Data
 		@AllArgsConstructor
-		class Body{
+		public class Body{
 			private Items items;
 			private int numOfRows;
 			private int pageNo;
@@ -37,7 +37,7 @@ public class ContentDTO {
 			
 			@Data
 			@AllArgsConstructor
-			class Items{
+			public class Items{
 				private List<ContentVO> item;
 			}
 		}

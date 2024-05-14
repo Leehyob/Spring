@@ -2,10 +2,12 @@ package kr.trip.controller;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +19,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,6 +37,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.trip.domain.AuthVO;
 import kr.trip.domain.MemberVO;
+import kr.trip.security.CustomUserDetailsService;
 import kr.trip.service.KakaoLoginService;
 import kr.trip.service.MemberService;
 import kr.trip.service.certifiedPhoneNumber;
@@ -89,8 +97,12 @@ public class MemberController {
 		MemberVO userInfo = kakaoS.getUserInfo(access_Token);
 		System.out.println("###nickname#### : " + userInfo.getName());
 		System.out.println("###email#### : " + userInfo.getMember_email());
-		model.addAttribute("email",userInfo.getMember_email());
+		model.addAttribute("member_email",userInfo.getMember_email());
 		model.addAttribute("name",userInfo.getName());
+		
+		UserDetails user = kakaoS.getAuthorities(userInfo.getMember_email());
+		
+		model.addAttribute("auth",user.getAuthorities());
 		
 		if(memberService.read(userInfo.getMember_email())!= null) {
 			return "/main";
@@ -113,6 +125,11 @@ public class MemberController {
 		System.out.println("카카오 db 저장 : " + vo);
 		memberService.register(vo);
 		memberService.insertAuth(new AuthVO(member_email, "ROLE_MEMBER"));
+		
+		
+		
+		rttr.addAttribute("member_email",member_email);
+		rttr.addAttribute("auth",vo.getAuthList());
 		
 		return "redirect:/main";
 	}

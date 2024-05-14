@@ -48,10 +48,7 @@ public class CommonController {
 	
 	@GetMapping("/main/cash")
 	public void charge(Model model) {
-		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		String username = ((UserDetails)principal).getUsername();
-		
-		model.addAttribute("member_email",username);
+
 	}
 	
 	@PostMapping("/main/cash")

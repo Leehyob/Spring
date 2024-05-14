@@ -14,7 +14,7 @@
       <h1>회원가입</h1>
       <hr>
       <label><b>이메일</b></label>
-      <input type="text" id="id" name="member_email" value="${email}" autofocus="autofocus" readonly="readonly"> 
+      <input type="text" id="id" name="member_email" value="${member_email}" autofocus="autofocus" readonly="readonly"> 
 		<hr>
       <label><b>이름</b></label>
       <input type="text" value="${name}" name="name" readonly="readonly">
