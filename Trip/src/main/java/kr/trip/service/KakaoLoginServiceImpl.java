@@ -161,7 +161,6 @@ public class KakaoLoginServiceImpl implements KakaoLoginService{
 	@Override
 	public UserDetails getAuthorities(String member_email) throws Throwable {
 		MemberVO vo = memberMapper.read(member_email);
-		vo.getAuthorities();
 		 
 		 System.out.println("vo : " +  vo.getAuthorities());
 		 Authentication authentication = new UsernamePasswordAuthenticationToken(member_email,"", vo.getAuthorities());

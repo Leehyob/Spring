@@ -10,4 +10,14 @@
 		values(#{content_id}, #{addr1},#{addr2},#{phone},#{areaname},#{contentType},#{cExplain})
 	</insert>
 	
+	<select id="contentList" resultType="kr.trip.domain.ContentVO">
+		select content_id, contentType, addr2, likeNum from content
+		where areaname = #{areaname}
+		</select>
+	
+	<select id="read" resultType="kr.trip.domain.ContentVO">
+		select contentType, addr2, likeNum from content
+		where content_id = #{content_id}
+	</select>
+	
 </mapper>

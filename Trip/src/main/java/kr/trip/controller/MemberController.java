@@ -35,6 +35,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.mysql.cj.Session;
+
 import kr.trip.domain.AuthVO;
 import kr.trip.domain.MemberVO;
 import kr.trip.security.CustomUserDetailsService;

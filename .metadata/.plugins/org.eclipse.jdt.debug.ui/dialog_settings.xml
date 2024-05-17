@@ -2,11 +2,11 @@
 <section name="Workbench">
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex02{ByTesFileCopy.java[ByTesFileCopy&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex01{ReadToFile.java[ReadToFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex01{WriteToFile.java[WriteToFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex03{SimpleWrite.java[SimpleWrite&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex03{SimpleRead.java[SimpleRead&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex02{ByTesFileCopy.java[ByTesFileCopy&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex01{ReadToFile.java[ReadToFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex01{WriteToFile.java[WriteToFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex03{SimpleWrite.java[SimpleWrite&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=InputOutputStream/src&amp;lt;ex03{SimpleRead.java[SimpleRead&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Practice01/C:\/Users\/20\/.m2\/repository\/com\/oracle\/database\/jdbc\/ojdbc8\/23.3.0.23.09\/ojdbc8-23.3.0.23.09.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/ojdbc8-23.3.0.23.09.jar=/=/maven.groupId=/com.oracle.database.jdbc=/=/maven.artifactId=/ojdbc8=/=/maven.version=/23.3.0.23.09=/=/maven.scope=/compile=/&amp;lt;oracle.jdbc.driver(JavaToJavaConverter$215.class[&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>
-			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_X_ORIGIN" value="367"/>
 			<item key="DIALOG_Y_ORIGIN" value="195"/>
 			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 		</section>

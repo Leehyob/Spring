@@ -21,6 +21,7 @@
 <c:if test="${member_email eq 'anonymousUser'}">
 	<button type="button" onclick="location.href='/customLogin'">로그인</button>
 </c:if>
+<button type="button" onclick="location.href='/board/register'">게시글 등록</button>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript">
