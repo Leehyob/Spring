@@ -19,8 +19,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.google.gson.Gson;
 
-import kr.trip.domain.Content;
-import kr.trip.domain.ContentDTO;
 import kr.trip.domain.ContentVO;
 import lombok.extern.log4j.Log4j;
 

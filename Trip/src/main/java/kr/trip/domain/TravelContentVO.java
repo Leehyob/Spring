@@ -1,6 +1,7 @@
 package kr.trip.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,6 @@ time datetime
 	private String content_id;
 	private int day;
 	private Date time;
+	private List<ContentVO> contentList;
 	
 }

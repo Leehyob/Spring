@@ -18,6 +18,8 @@
 	
 	<security:http>	
 		<security:intercept-url pattern="/main/cash" access="hasRole('ROLE_MEMBER')"/>	<!-- 권한 설정 -->
+		<security:intercept-url pattern="/member/my" access="hasRole('ROLE_MEMBER')"/>	<!-- 권한 설정 -->
+		<security:intercept-url pattern="/member/my" access="hasRole('ROLE_MEMBER')"/>	<!-- 권한 설정 -->
 
 		<security:form-login login-page="/customLogin" authentication-success-handler-ref="customLoginSuccessHandler"/>
 		<security:form-login login-page="/customLogin" />	<!-- 로그인 성공시 동작 -->

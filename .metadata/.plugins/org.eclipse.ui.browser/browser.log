@@ -170,3 +170,62 @@
 
 5월 10, 2024 09:45:52.654 NEW SESSION
 5월 10, 2024 09:45:52.654 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+5월 20, 2024 09:45:30.510 NEW SESSION
+5월 20, 2024 09:45:30.510 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+5월 20, 2024 19:17:39.270 NEW SESSION
+5월 20, 2024 19:17:39.270 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 20, 2024 19:19:20.899 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 20, 2024 19:51:35.634 [13260:13232:0520/195135.634:ERROR:command_buffer_proxy_impl.cc(323)] GPU state invalid after WaitForGetOffsetInRange.
+5월 20, 2024 19:51:35.634 [13260:13232:0520/195135.634:ERROR:command_buffer_proxy_impl.cc(323)] GPU state invalid after WaitForGetOffsetInRange.
+
+5월 21, 2024 09:36:53.550 NEW SESSION
+5월 21, 2024 09:36:53.550 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 21, 2024 09:40:51.606 [4688:10536:0521/094051.606:ERROR:device_event_log_impl.cc(195)] [09:40:51.607] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 09:48:16.483 [4688:10536:0521/094816.483:ERROR:device_event_log_impl.cc(195)] [09:48:16.483] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 09:55:36.392 [4688:10536:0521/095536.392:ERROR:device_event_log_impl.cc(195)] [09:55:36.392] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:10:37.977 [4688:10536:0521/101037.977:ERROR:device_event_log_impl.cc(195)] [10:10:37.976] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:17:44.877 [4688:10536:0521/101744.877:ERROR:device_event_log_impl.cc(195)] [10:17:44.877] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:25:12.449 [4688:10536:0521/102512.448:ERROR:device_event_log_impl.cc(195)] [10:25:12.449] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:32:36.407 [4688:10536:0521/103236.406:ERROR:device_event_log_impl.cc(195)] [10:32:36.406] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:39:54.342 [4688:10536:0521/103954.342:ERROR:device_event_log_impl.cc(195)] [10:39:54.340] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:47:23.466 [4688:10536:0521/104723.466:ERROR:device_event_log_impl.cc(195)] [10:47:23.465] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 10:54:44.768 [4688:10536:0521/105444.768:ERROR:device_event_log_impl.cc(195)] [10:54:44.767] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:02:05.988 [4688:10536:0521/110205.988:ERROR:device_event_log_impl.cc(195)] [11:02:05.987] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:09:32.310 [4688:10536:0521/110932.309:ERROR:device_event_log_impl.cc(195)] [11:09:32.308] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:16:57.410 [4688:10536:0521/111657.409:ERROR:device_event_log_impl.cc(195)] [11:16:57.408] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:24:17.987 [4688:10536:0521/112417.986:ERROR:device_event_log_impl.cc(195)] [11:24:17.985] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:31:40.289 [4688:10536:0521/113140.289:ERROR:device_event_log_impl.cc(195)] [11:31:40.289] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:31:49.628 [4688:10536:0521/113149.627:ERROR:device_event_log_impl.cc(195)] [11:31:49.627] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:39:12.566 [4688:10536:0521/113912.566:ERROR:device_event_log_impl.cc(195)] [11:39:12.565] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:46:41.674 [4688:10536:0521/114641.674:ERROR:device_event_log_impl.cc(195)] [11:46:41.673] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 11:53:56.273 [4688:10536:0521/115356.273:ERROR:device_event_log_impl.cc(195)] [11:53:56.273] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:01:19.356 [4688:10536:0521/120119.356:ERROR:device_event_log_impl.cc(195)] [12:01:19.356] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:02:16.133 [4688:10536:0521/120216.133:ERROR:device_event_log_impl.cc(195)] [12:02:16.133] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:09:15.944 [4688:10536:0521/120915.944:ERROR:device_event_log_impl.cc(195)] [12:09:15.943] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:16:27.134 [4688:10536:0521/121627.134:ERROR:device_event_log_impl.cc(195)] [12:16:27.133] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:23:37.668 [4688:10536:0521/122337.667:ERROR:device_event_log_impl.cc(195)] [12:23:37.666] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:31:06.87 [4688:10536:0521/123106.087:ERROR:device_event_log_impl.cc(195)] [12:31:06.086] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:38:26.763 [4688:10536:0521/123826.763:ERROR:device_event_log_impl.cc(195)] [12:38:26.762] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:45:45.831 [4688:10536:0521/124545.831:ERROR:device_event_log_impl.cc(195)] [12:45:45.831] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 12:53:06.941 [4688:10536:0521/125306.941:ERROR:device_event_log_impl.cc(195)] [12:53:06.941] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 13:00:29.484 [4688:10536:0521/130029.483:ERROR:device_event_log_impl.cc(195)] [13:00:29.482] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 13:08:01.794 [4688:10536:0521/130801.794:ERROR:device_event_log_impl.cc(195)] [13:08:01.794] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 13:15:24.740 [4688:10536:0521/131524.740:ERROR:device_event_log_impl.cc(195)] [13:15:24.740] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:01:26.616 [4688:10536:0521/140126.615:ERROR:device_event_log_impl.cc(195)] [14:01:26.615] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:08:49.499 [4688:10536:0521/140849.499:ERROR:device_event_log_impl.cc(195)] [14:08:49.499] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:16:15.145 [4688:10536:0521/141615.145:ERROR:device_event_log_impl.cc(195)] [14:16:15.144] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:23:39.452 [4688:10536:0521/142339.452:ERROR:device_event_log_impl.cc(195)] [14:23:39.451] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:31:05.262 [4688:10536:0521/143105.262:ERROR:device_event_log_impl.cc(195)] [14:31:05.261] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:38:27.836 [4688:10536:0521/143827.825:ERROR:device_event_log_impl.cc(195)] [14:38:27.825] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:45:50.178 [4688:10536:0521/144550.178:ERROR:device_event_log_impl.cc(195)] [14:45:50.177] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 14:53:15.43 [4688:10536:0521/145315.043:ERROR:device_event_log_impl.cc(195)] [14:53:15.042] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:08:01.744 [4688:10536:0521/150801.743:ERROR:device_event_log_impl.cc(195)] [15:08:01.744] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:15:25.860 [4688:10536:0521/151525.860:ERROR:device_event_log_impl.cc(195)] [15:15:25.859] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:22:51.844 [4688:10536:0521/152251.843:ERROR:device_event_log_impl.cc(195)] [15:22:51.842] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:22:56.322 [4688:10536:0521/152256.321:ERROR:device_event_log_impl.cc(195)] [15:22:56.319] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:30:14.890 [4688:10536:0521/153014.890:ERROR:device_event_log_impl.cc(195)] [15:30:14.890] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:37:41.187 [4688:10536:0521/153741.186:ERROR:device_event_log_impl.cc(195)] [15:37:41.186] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:45:04.210 [4688:10536:0521/154504.210:ERROR:device_event_log_impl.cc(195)] [15:45:04.209] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 21, 2024 15:52:27.489 [4688:10536:0521/155227.489:ERROR:device_event_log_impl.cc(195)] [15:52:27.489] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)

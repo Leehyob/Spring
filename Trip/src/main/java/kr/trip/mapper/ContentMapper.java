@@ -2,7 +2,6 @@ package kr.trip.mapper;
 
 import java.util.List;
 
-import kr.trip.domain.Content;
 import kr.trip.domain.ContentVO;
 
 public interface ContentMapper {
