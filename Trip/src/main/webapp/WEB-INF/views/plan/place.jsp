@@ -155,28 +155,6 @@
   <div id="place" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
       <span class="fs-5 fw-semibold">List group</span>
       <div class="pac-card" id="pac-controls">
-      	<div>
-      		<div id="title">
-      			Autocomplete search
-      		</div>
-      		<div id="type-selector" class="pac-controls" style="backgroundcolor:skyblue;">
-      			<input type="radio" name="type" id="changetype-all" checked="checked">
-      			<label for="changetype-all">All</label>
-      			
-      			<input type="radio" name="type" id="changetype-establishment">
-      			<label for="changetype-establishment">Establishments</label>
-
-      			<input type="radio" name="type" id="changetype-address">
-      			<label for="changetype-address">Addresses</label>
-
-      			<input type="radio" name="type" id="changetype-geocode">
-      			<label for="changetype-geocode">Geocodes</label>
-      		</div>
-      		<div id="strict-bounds-selector" class="pac-controls">
-      			<input type="checkbox" id="use-strict-bounds" value="">
-      			<label for="use-strict-bounds">Strict Bounds</label>
-      		</div>
-      	</div>
       	<div id="pac-container">
       		<input id="pac-input" type="text" placeholder="Enter a location">
       	</div>
@@ -279,6 +257,8 @@
       const labels = "123456789";
       let labelIndex = 0;
       
+      var markers = [];
+      
       function geocodeAddress(geocoder, resultMap, address) {
           console.log('지오코딩 함수 실행');
 
@@ -308,92 +288,36 @@
                       }
                   });
 
+                  
+                  markers.push(marker);
+                  console.log('마커 배열 :',markers);
                   console.log('위도:', marker.position.lat());
                   console.log('경도:', marker.position.lng());
                   
+                  updatePolyline();
                   
               } else {
                   alert('지오코드가 다음의 이유로 성공하지 못했습니다: ' + status);
               }
           });
       }
-      
-      var card = document.getElementById('pac-card');
-      var input = document.getElementById('pac-input');
-      var types = document.getElementById('type-selector');
-      var strictBounds = document.getElementById('strict-bounds-selector');
-
-      map.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
-
-      var autocomplete = new google.maps.places.Autocomplete(input);
-
-      autocomplete.bindTo('bounds', map);
-      autocomplete.setFields(['address_components', 'geometry', 'icon', 'name']);
-
-      var infowindow = new google.maps.InfoWindow();
-      var infowindowContent = document.getElementById('infowindow-content');
-      infowindow.setContent(infowindowContent);
-
-      var marker = new google.maps.Marker({
-          map: map,
-          anchorPoint: new google.maps.Point(0, -29)
-      });
-
-      autocomplete.addListener('place_changed', function () {
-          infowindow.close();
-          marker.setVisible(false);
-          var place = autocomplete.getPlace();
-          if (!place.geometry) {
-              window.alert("상세 정보가 없습니다. '" + place.name + "'");
-              return;
-          }
-
-          if (place.geometry.viewport) {
-              map.fitBounds(place.geometry.viewport);
-          } else {
-              map.setCenter(place.geometry.location);
-              map.setZoom(17);
-          }
-          marker.setPosition(place.geometry.location);
-          marker.setVisible(true);
-
-          document.getElementById('latclick').value = marker.getPosition().lat();
-          document.getElementById('lngclick').value = marker.getPosition().lng();
-
-          var address = '';
-          if (place.address_components) {
-              address = [
-                  (place.address_components[0] && place.address_components[0].short_name || ''),
-                  (place.address_components[1] && place.address_components[1].short_name || ''),
-                  (place.address_components[2] && place.address_components[2].short_name || '')
-              ].join('  ');
-          }
-
-          document.getElementById("address").value = address;
-          document.getElementById("place_name").value = place.name;
-
-          infowindowContent.children['place-icon'].src = place.icon;
-          infowindowContent.children['place-name'].textContent = place.name;
-          infowindowContent.children['place-address'].textContent = address;
-          infowindow.open(map, marker);
-      });
-
-      function setupClickListener(id, types) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function () {
-              autocomplete.setTypes(types);
-          });
+     
+      function updatePolyline(){
+    	  var path = markers.map(marker => marker.getPosition());
+    	  
+    	  var flightPath = new google.maps.Polyline({
+    		  path : path,
+    		  geodesic : true,
+    		  strokeColor : "#FF0000",
+    		  strokeOpacity : 1.0,
+    		  strokeWeight : 2
+    	  });
+    	  
+    	  flightPath.setMap(map);
+    	  
+    	  
       }
-
-      setupClickListener('changetype-all', []);
-      setupClickListener('changetype-address', ['address']);
-      setupClickListener('changetype-establishment', ['establishment']);
-      setupClickListener('changetype-geocode', ['geocode']);
-
-      document.getElementById('use-strict-bounds').addEventListener('click', function () {
-          console.log("Checkbox clicked new state = " + this.checked);
-          autocomplete.setOptions({ strictBounds: this.checked });
-      });
+      
   }
 
   document.addEventListener('DOMContentLoaded', myMap);

@@ -10,6 +10,29 @@
 		values(#{plan_id},#{content_id},#{day},02:00:00)
 	</insert>
 	
+	<insert id="insertTravelPlan">
+		insert into travelPlan(member_email,go, end)
+		values(#{member_email}, #{go}, #{end})
+	</insert>
+	
+	<update id="updateDayOfTravelPlan">
+		update travelplan set day = datediff(#{end},#{go})+1
+	</update>
+	
+	<update id="updateTravelPlan">
+		update travelplan set go=#{go},end=#{end},day=datediff(#{end},#{go})+1
+		 where plan_id = #{plan_id}
+	</update>
+	
+	<update id="updateTravelContent">
+		update travelContent set day = #{day}, time=#{time}
+		where plan_id = #{plan_id}
+	</update>
+	
+	<delete id="deleteFromTravelContent">
+		delete from travelContent where plan_id = #{plan_id} and content_id = #{content_id}
+	</delete>
+	
 	<resultMap type="kr.trip.domain.ContentVO" id="ContentVO">
 	    <result column="content_id" property="content_id"/>
 	    <result column="addr1" property="addr1"/>

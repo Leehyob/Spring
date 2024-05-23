@@ -1,5 +1,9 @@
 package kr.trip.mapper;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Test;
@@ -9,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import kr.trip.domain.MemberVO;
+import kr.trip.domain.TravelPlanVO;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -18,6 +23,9 @@ public class MapperTest {
 
 	@Autowired
 	private MemberMapper memberMapper;
+	
+	@Autowired
+	private PlanMapper planMapper;
 	
 	@Test
 	public void testFindId() {
@@ -43,4 +51,22 @@ public class MapperTest {
 		System.out.println(memberMapper.update(vo));
 	}
 	
+	@Test
+	public void insertTest() throws ParseException {
+		String member_email = "dlgyqls11@naver.com";
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		Date go = df.parse("2024-06-03");
+		Date end = df.parse("2024-06-08");
+
+		TravelPlanVO tp = new TravelPlanVO();
+		tp.setMember_email(member_email);
+		tp.setGo(go);
+		tp.setEnd(end);
+		planMapper.insertTravelPlan(tp);
+		
+		planMapper.updateDayOfTravelPlan(tp);
+		
+		System.out.println(tp.getDay());
+
+	}
 }

@@ -55,28 +55,21 @@ public class PlanController {
 	        return response;
 	    }
 	    
-	    @PostMapping("/plan/choose")
+	    @PostMapping("/plan/place")
 	    @Transactional
 	    @ResponseBody
-	    public ResponseEntity<List<ContentVO>> choosePlace(int plan_id, String content_id, Model model) {
+	    public String choosePlace(TravelPlanVO tp, List<TravelContentVO> tcList, RedirectAttributes rttr) {
 	    	
-	    	System.out.println(plan_id);
+	    	planService.insertTravelPlan(tp);
 	    	
-	    	System.out.println(content_id);
+	    	for(TravelContentVO tc : tcList) {
+	    		planService.insertContentIntoPlan(tc);
+	    	}
 	    	
-	    	return null;
-//	    	
-//	    	TravelContentVO tc = new TravelContentVO();
-//	    	tc.setContent_id(content_id);
-//	    	tc.setPlan_id(plan_id);
-//	    	
-//	    	planService.insertContentIntoPlan(tc);
-//	    	
-//	    	List<ContentVO> list = planService.getContentListOfPlan(plan_id);
-//	    	
-//	    	model.addAttribute("contentList",list);
-//	    	
-//	    	return new ResponseEntity<List<ContentVO>>(list, HttpStatus.OK);
+	    	rttr.addAttribute("travelPlan",tp);
+	    	rttr.addAttribute("tcList",tcList);
+	    	
+	    	return "redirect:/plan/list";
 	    }
 	    
 	    
