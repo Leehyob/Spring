@@ -9,9 +9,10 @@
 <div class="row">
 <div class="image_head">
 <img id="helpImage" alt="문의사항 섹션" src="../resources/image/help.jpg" >
+<!-- <h1 class="imagetext">문의 게시판</h1> -->
 </div>
     <div class="col-lg-12">
-        <p class="page-header_h">문의 사항&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="page-header_h">문의 사항&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     </div>
     <!-- /.col-lg-12 -->
 </div>

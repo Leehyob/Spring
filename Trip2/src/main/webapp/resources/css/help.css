@@ -13,13 +13,24 @@
 	bottom: -20px;
 }
 
+
 .image_head{
 	position:relative;
-	height: 300px;
+	height: 400px;
 	overflow: hidden;
 }
 
+.imagetext{
+	position :absolute;
+	right : 0%;
+	top : 45%;
+	margin-right: 40px;
+	color: white;
+	font-size: 50px;
+}
+
 #help_table{
+	height : 800px;
 	padding-left: 30px;
 	padding-right: 30px;
 }

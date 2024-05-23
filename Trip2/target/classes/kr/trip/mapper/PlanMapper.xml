@@ -8,8 +8,8 @@ SELECT * FROM content WHERE areaname = #{areaname}
 </select>
 
 <insert id="insert">
-	insert into content(content_id, addr1, addr2, phone, cExplain, areaname, contentType, likeNum)
-	values(#{content_id}, #{addr1},#{addr2},#{phone},#{cExplain},#{areaname},#{contentType},#{likeNum})
+	insert into content(content_id, addr1, addr2, phone, cExplain, areaname, contentType, likeNum,image1)
+	values(#{content_id}, #{addr1},#{addr2},#{phone},#{cExplain},#{areaname},#{contentType},#{likeNum},#{image1 )
 </insert>
 
 <insert id="insertContentIntoPlan">
