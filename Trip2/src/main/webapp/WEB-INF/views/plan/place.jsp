@@ -344,7 +344,6 @@
               console.log('위도:', marker.position.lat());
               console.log('경도:', marker.position.lng());
 
-              updatePolyline();
 
             } else {
               alert('지오코드가 다음의 이유로 성공하지 못했습니다: ' + status);

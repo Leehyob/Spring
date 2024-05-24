@@ -69,7 +69,6 @@ public class PlanController {
 
 	@PostMapping("/place")
     @Transactional
-    @ResponseBody
     public String choosePlace(TravelPlanVO tp, List<TravelContentVO> tcList, RedirectAttributes rttr) throws ParseException {
     	
 		service.insertTravelPlan(tp);
