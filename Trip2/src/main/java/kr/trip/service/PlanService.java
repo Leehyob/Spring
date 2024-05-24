@@ -4,12 +4,16 @@ import java.text.ParseException;
 import java.util.List;
 
 import kr.trip.domain.AllOfPlanDTO;
+import kr.trip.domain.AreaVO;
 import kr.trip.domain.ContentVO;
 import kr.trip.domain.TravelContentVO;
 import kr.trip.domain.TravelPlanVO;
 
 public interface PlanService {
-	public List<ContentVO>getContentAreaList(String areaname);
+	
+	public AreaVO getAreaContent(String areaname);
+	
+	public List<ContentVO> getContentAreaList(String areaname);
 	
 	public void insert(ContentVO content);
 

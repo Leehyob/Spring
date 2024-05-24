@@ -114,7 +114,9 @@
         <!-- 장소 선택 --><!-- 장소 선택 --><!-- 장소 선택 --><!-- 장소 선택 --><!-- 장소 선택 --><!-- 장소 선택 -->
         <div id="place">
           <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
-            <span class="fs-5 fw-semibold">${areaname }</span>
+            <span class="fs-5 fw-semibold" id="area">${areaname }</span>
+            <input type="hidden" id="lat" name="lat" value="${area.lat}">
+            <input type="hidden" id="lng" name="lng"  value="${area.lng}">
             <div class="pac-card" id="pac-controls">
               <div>
                 <div id="title">
@@ -262,14 +264,21 @@
     </body>
     <script>
       function myMap() {
-        const myLatLng = { lat: 35.8473612313022, lng: 129.218053667485 };
+		
+    	  var lat = parseFloat(document.getElementById("lat").value);
+    	  var lng = parseFloat(document.getElementById("lng").value);
+    	  
+    	  console.log(lat);
+    	  console.log(lng);
+    	  
+        const myLatLng = { lat: lat, lng: lng};
 
         var marker;
         var label;
         var flightPath;
         
         var map = new google.maps.Map(document.getElementById("googleMap"), {
-          zoom: 14,
+          zoom:11,
           center: myLatLng
         });
 
@@ -525,7 +534,6 @@
         })
       })
     </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-nI2V_bsNjQF5ZQ4mlq8o8sr1oZ6bLi0&libraries=places&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-nI2V_bsNjQF5ZQ4mlq8o8sr1oZ6bLi0&libraries=places&callback=myMap"></script>
 
 </html>

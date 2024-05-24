@@ -37,9 +37,13 @@ public class PlanController {
 	
 	@GetMapping("/place")
 	public void plan2(Model model) {
-		log.info("테스트 내용" + service.getContentAreaList("경주"));
-	model.addAttribute("list",service.getContentAreaList("경주"));
-	model.addAttribute("areaname", "경주");
+		
+		String areaname = "영월";
+	model.addAttribute("list",service.getContentAreaList(areaname));
+	model.addAttribute("areaname", areaname);
+	model.addAttribute("area",service.getAreaContent(areaname));
+	System.out.println(service.getAreaContent(areaname));
+	
 	}
 	
 	
@@ -63,7 +67,7 @@ public class PlanController {
 			                                            new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
-	@PostMapping("/plan/place")
+	@PostMapping("/place")
     @Transactional
     @ResponseBody
     public String choosePlace(TravelPlanVO tp, List<TravelContentVO> tcList, RedirectAttributes rttr) throws ParseException {
@@ -80,7 +84,7 @@ public class PlanController {
     	return "redirect:/plan/library";
     }
 	
-	@GetMapping("plan/list")
+	@GetMapping("/library")
 	public void getPlan(List<AllOfPlanDTO> planList, TravelPlanVO tp,String areaname, Model model) {
 		
 		model.addAttribute("areaname",areaname);

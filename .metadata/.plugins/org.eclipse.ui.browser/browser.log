@@ -598,3 +598,24 @@
 5월 22, 2024 16:04:09.982 [832:7504:0522/160409.982:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.536 s for first_image_paint 0.519 s
 5월 22, 2024 16:04:10.102 [832:7504:0522/160410.102:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.536 s for first_image_paint 0.519 s
 5월 22, 2024 16:06:13.819 [832:7504:0522/160613.819:ERROR:device_event_log_impl.cc(195)] [16:06:13.818] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+
+5월 24, 2024 09:39:26.775 NEW SESSION
+5월 24, 2024 09:39:26.775 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 24, 2024 09:43:02.302 [10812:2240:0524/094302.301:ERROR:device_event_log_impl.cc(195)] [09:43:02.301] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 09:57:42.317 [10812:2240:0524/095742.317:ERROR:device_event_log_impl.cc(195)] [09:57:42.316] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 10:34:43.245 [10812:2240:0524/103443.244:ERROR:device_event_log_impl.cc(195)] [10:34:43.244] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 10:49:31.109 [10812:2240:0524/104931.108:ERROR:device_event_log_impl.cc(195)] [10:49:31.108] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 10:56:54.345 [10812:2240:0524/105654.345:ERROR:device_event_log_impl.cc(195)] [10:56:54.344] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 10:57:01.288 [10812:2240:0524/105701.288:ERROR:device_event_log_impl.cc(195)] [10:57:01.287] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:04:25.645 [10812:2240:0524/110425.645:ERROR:device_event_log_impl.cc(195)] [11:04:25.644] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:11:43.714 [10812:2240:0524/111143.714:ERROR:device_event_log_impl.cc(195)] [11:11:43.713] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:19:06.476 [10812:2240:0524/111906.476:ERROR:device_event_log_impl.cc(195)] [11:19:06.475] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:26:34.18 [10812:2240:0524/112634.018:ERROR:device_event_log_impl.cc(195)] [11:26:34.017] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:33:55.775 [10812:2240:0524/113355.775:ERROR:device_event_log_impl.cc(195)] [11:33:55.774] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:33:58.63 [10812:2240:0524/113358.062:ERROR:device_event_log_impl.cc(195)] [11:33:58.061] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:41:23.231 [10812:2240:0524/114123.231:ERROR:device_event_log_impl.cc(195)] [11:41:23.231] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:41:24.817 [10812:2240:0524/114124.817:ERROR:device_event_log_impl.cc(195)] [11:41:24.816] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:48:26.362 [10812:2240:0524/114826.362:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 24, 2024 11:48:43.576 [10812:2240:0524/114843.576:ERROR:device_event_log_impl.cc(195)] [11:48:43.575] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 11:56:07.665 [10812:2240:0524/115607.665:ERROR:device_event_log_impl.cc(195)] [11:56:07.665] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+5월 24, 2024 12:03:31.609 [10812:2240:0524/120331.609:ERROR:device_event_log_impl.cc(195)] [12:03:31.608] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)

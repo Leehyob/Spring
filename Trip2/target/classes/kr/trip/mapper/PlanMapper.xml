@@ -3,6 +3,12 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.trip.mapper.PlanMapper">
+
+<select id="getAreaContent" resultType="kr.trip.domain.AreaVO">
+select * from area where areaname = #{areaname}
+</select>
+
+
 <select id="getContentAreaList" resultType="kr.trip.domain.ContentVO">
 SELECT * FROM content WHERE areaname = #{areaname}
 </select>

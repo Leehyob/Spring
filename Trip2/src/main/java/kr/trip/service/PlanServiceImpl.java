@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.trip.domain.AllOfPlanDTO;
+import kr.trip.domain.AreaVO;
 import kr.trip.domain.ContentVO;
 import kr.trip.domain.TravelContentVO;
 import kr.trip.domain.TravelPlanVO;
@@ -119,6 +120,12 @@ public class PlanServiceImpl implements PlanService{
 	public void insert(ContentVO content) {
 		System.out.println("실행");
 		mapper.insert(content);
+	}
+
+
+	@Override
+	public AreaVO getAreaContent(String areaname) {
+		return mapper.getAreaContent(areaname);
 	}
 	
 }
